@@ -1,8 +1,7 @@
-/* === Background dan Tata Letak Umum === */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('background.jpg'); /* GANTI sesuai nama & lokasi gambarmu */
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,64 +9,88 @@ body {
     padding: 0;
 }
 
-/* Judul */
-h1 {
-    color: #000;
-    margin-top: 20px;
-    text-shadow: 1px 1px 2px #fff;
-}
-
-/* Kotak timer */
 .timer-container {
-    margin: 30px auto;
-    background: rgba(255, 255, 255, 0.9); /* transparan agar tidak tenggelam di gambar */
-    padding: 30px 20px;
+    background: white;
+    padding: 30px;
     border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    color: #000;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Tampilan angka timer */
 #timer {
     font-size: 48px;
     margin-bottom: 20px;
-    letter-spacing: 2px;
 }
 
-/* Tombol */
-.buttons button, #saveBtn {
-    font-size: 16px;
+#startBtn {
+    padding: 10px 20px;
     margin: 5px;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 5px;
-    background: #305993;
-    color: #fff;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.2s;
+    border: none;
+    border-radius: 5px;
+    background-color: #07e83c; 
+
 }
 
-.buttons button:disabled, #saveBtn:disabled {
-    background: #aaa;
-    /* cursor: not-allowed; ← HAPUS baris ini */
+#startBtn:hover {
+    background-color: #196129; 
+
 }
 
-.buttons button:hover:not(:disabled), #saveBtn:hover:not(:disabled) {
-    background: #007bff;
+#stopBtn {
+    
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5051d; 
 }
 
-/* Tabel log waktu */
-#logTable {
-    margin: 20px auto;
-    width: 300px;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    color: #000;
+#stopBtn:hover {
+    background-color: #6c1922; 
 }
 
-#logTable th, #logTable td {
-    border: 1px solid #000;
+#resetBtn {
+    
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107; 
+}
+
+#resetBtn:hover {
+    background-color: #b18d20; 
+}
+
+form button[type="submit"] {
+
+padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+    background-color: #007BFF; 
+}
+
+form button[type="submit"]:hover {
+    background-color: #164c85; 
+}
+
+#logList {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
+    background: #fff;
+    border-radius: 8px;
 }
